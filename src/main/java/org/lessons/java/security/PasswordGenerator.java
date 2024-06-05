@@ -14,17 +14,22 @@ public class PasswordGenerator {
 	short year;
 	
 	//definizione valori
-	name = "Nicolò-";
-	username = "De Giorgi-";
-    favoriteColor = "Arancione-";
+	name = "Nicolò";
+	username = "De Giorgi";
+    favoriteColor = "Arancione";
     day = 26;
     month = 06;
     year = 1999;
     
     //somma data di nascia
-    int somma = 26+6+1999;
+    int somma = day + month + year;
+   
+    //generatore password 
+   String generatePass = name + "-" + username + "-" + favoriteColor + "-" + somma;
+   String password = "Password: " + generatePass;
+   
     
-    System.out.printf("Password:  "+ name + username + favoriteColor + somma );
+    System.out.printf (password);
     
     
     
